@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Batatabit</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Inter:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="CSS/tablet.css" media="(min-width: 930px">
+</head>
+<body>
+    <!-- Hero -->
+    <header>
+        <img src="assets/img/logo.svg" alt="batabit logo" class="logo">
+        <div class="header--title-container">
+            <h1>Placeres que vienen del cielo</h1>
+            <p>Delicias del Cielo te traen los mejores pasteles hechos con arte y tradición</p>
+            <a href="#plans" class="header--button">Quiero comprar<span></span></a>
+        </div>
+    </header>
+    <!-- Hero End -->
+    <main>
+    <!-- Sección 1 - Top products -->
+        <section class="main-exchange-container">
+            <div class="main-exchange-container--title">
+                <h2>Nuestros productos más solicitados</h2>
+                <p>Eston son los productos que más solicitan nuestros clientes. No te quedes sin probarlos.</p>
+                <div class="product-card--container">
+                    <article class="product--card">
+                        <span class="product--card-icon clock"></span>
+                        <h3 class="product-card--title">Tiempo real</h3>
+                        <p class="product-card--body">Nuestro API toma información minuto a minuto sobre las tasas que más determinan el comportamiento.</p>
+                    </article>
+                    <article class="product--card">
+                        <span class="product--card-icon eye"></span>
+                        <h3 class="product-card--title">No hay tasas escondidas</h3>
+                        <p class="product-card--body">Ni en la compra o al momento de exit, Batabit siempre te muestra el costo real de lo que estás adquiriendo.</p>
+                    </article>
+                    <article class="product--card">
+                        <span class="product--card-icon dollar"></span>
+                        <h3 class="product-card--title">Compara monedas</h3>
+                        <p class="product-card--body">No más rumores, con Batabit sabrás el valor real de cada moneda en el mercado actual.</p>
+                </div>
+            </div>
+        </section>
+        <!-- Sección 1 End - Top products -->
+        <!-- Sección 2 - Comprar -->
+        <section class="purchase-form">
+            <h2>Ordenar</h2>
+            <form action="">
+                <!-- Nombre -->
+                <label for="name">Nombre y Apellido</label><br>
+                <input type="text" class="input-box" placeholder="Pedro Perez" required><br>
+                <!-- Teléfono -->
+                <label for="phone">Número de teléfono</label><br>
+                <input type="tel" name="phone" placeholder="123-45-678" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required><br>
+                <!-- Mail -->
+                <label for="mail">Correo electrónico</label><br>
+                <input type="email" id="email" name="email" placeholder="pedro@mail.com"><br>
+                <!-- Sabor de biscocho 1 -->
+                <label for="sabor1">Elija el sabor del biscocho</label><br>
+                <input list="sabor">
+                <datalist id="sabor" name="sabor1">
+                    <option value="Vainilla">Vainilla</option>
+                    <option value="Chocolate">Chocolate</option>
+                    <option value="Marmoleado">(Vainilla/Chocolate</option>
+                    <option value="Red Velvet">Red Velvet</option>
+                    <option value="Limón">Limón</option>
+                    <option value="Zanahoria">Zanahoria</option>
+                    <option value="Fresa">Fresa</option>
+                    <option value="Café">Café</option>
+                    <option value="Naranja">Naranja</option>
+                </datalist><br>
+                <!-- Sabor de biscocho 1 End-->
+                
+                <!-- Sabor de biscocho 2 -->
+                <label for="sabor2">Combinar con otro sabor</label><br>
+                <input list="sabor2">
+                <datalist id="sabor2" name="sabor2">
+                    <option value="Vainilla">Vainilla</option>
+                    <option value="Chocolate">Chocolate</option>
+                    <option value="Marmoleado">(Vainilla/Chocolate</option>
+                    <option value="Red Velvet">Red Velvet</option>
+                    <option value="Limón">Limón</option>
+                    <option value="Zanahoria">Zanahoria</option>
+                    <option value="Fresa">Fresa</option>
+                    <option value="Café">Café</option>
+                    <option value="Naranja">Naranja</option>
+                </datalist><br>
+                <!-- Sabor de biscocho 2 End-->
+
+                <!-- Decoración 1 -->
+                <label for="deco1">Elija la decoración de su pastel</label><br>
+                <input list="deco1">
+                <datalist id="deco1" name="deco1">
+                    <option value="Arequipe">Arequipe</option>
+                    <option value="Trufas">Trufas</option>
+                    <option value="Melocotón">Melocotón</option>
+                    <option value="Fresas">Fresas</option>
+                    <option value="Kiwi">Kiwi</option>
+                    <option value="Almendras">Almendras</option>
+                    <option value="Fresas">Fresas</option>
+                    <option value="Cerezas">Cerezas</option>
+                    <option value="Butter Cream">Butter Cream</option>
+                </datalist><br>
+                <!-- Decoración 1 End -->
+                <!-- Decoración 2 -->
+                <label for="deco2">Elija la decoración de su pastel</label><br>
+                <input list="deco2">
+                <datalist id="deco2" name="deco2">
+                    <option value="Arequipe">Arequipe</option>
+                    <option value="Trufas">Trufas</option>
+                    <option value="Melocotón">Melocotón</option>
+                    <option value="Fresas">Fresas</option>
+                    <option value="Kiwi">Kiwi</option>
+                    <option value="Almendras">Almendras</option>
+                    <option value="Fresas">Fresas</option>
+                    <option value="Cerezas">Cerezas</option>
+                    <option value="Butter Cream">Butter Cream</option>
+                </datalist><br>
+                <!-- Decoración 2 End -->
+                <!-- Fecha -->
+                <label for="delivery">Elija la fecha y hora que quiere recibir la entrega</label>
+                <input type="datetime-local" name="delivery-time"><br>
+                <!-- Comentario -->
+                <label for="comentario" >¿Deseas comentar algo?</label><br>
+                <input type="text" id="comentario" name="comentario" placeholder="Comentar"><br>
+                <!-- Buttons -->
+                <div class="buttton-container">
+                    <button href="#" class="pay-card, button">Pagar con Tarjeta<span class="card-icon"></span></button>
+                    <button href="#" class="paypal">PayPal<span class="paypal-icon"></span></button>
+                </div>
+            </form>
+        </section>
+        <!-- End Sección 2 - Comprar -->
+
+        <!-- Sección 3 - Sabores -->
+                <section id="plans" class="plans">
+            <h2>Escoge el plan que mejor se ajuste a ti.</h2>
+            <p class="plans--description">Cualquier plan te da acceso completo a nuestra plataforma.</p>
+            <section class="plans__card-container">
+                <article class="plans__card">
+                    <div>
+                        <h3>Pago Anual</h3>
+                        <p class="plans-cards--card-price"><sup>$</sup>99</p>
+                        <p>*Ahorras $129 comparado al plan mensual.</p>
+                        <button href="#" class="plans-cards--card-button">Escoger este <span class="arrow-right"></span></button>
+                    </div>
+                </article>
+                <article class="plans__card">
+                    <p class="plans-cards--card-top">Recomendado</p>
+                    <div>
+                        <h3>Pago Anual</h3>
+                        <p class="plans-cards--card-price"><sup>$</sup>99</p>
+                        <p>*Ahorras $129 comparado al plan mensual.</p>
+                        <button href="#" class="plans-cards--card-button">Escoger este <span class="arrow-right"></span></button>
+                    </div>
+                </article><article class="plans__card">
+                    <div>
+                        <h3>Pago Anual</h3>
+                        <p class="plans-cards--card-price"><sup>$</sup>99</p>
+                        <p>*Ahorras $129 comparado al plan mensual.</p>
+                        <button href="#" class="plans-cards--card-button">Escoger este <span class="arrow-right"></span></button>
+                    </div>
+                </article>
+            </section>
+        </section>
+    </main>
+
+    <footer>
+        <section class="footer__left">
+            <ul>
+                <li class="footer__associates">
+                    <a href="#">LinkedIn</a>
+                </li>
+                <li class="footer__associates">
+                    <a href="#">CrunchBase</a>
+                </li>
+                <li class="footer__associates">
+                    <a href="#">HackerNews</a>
+                </li>
+            </ul>
+        </section>
+        <figure class="footer__right">
+            <img src="assets/icons/batata.svg" alt="logo de batatabit 2020" class="batatabit-logo">
+            <p class="footer__copyright">® Batatabit 2020</p>
+        </figure>
+    </footer>
+</body>
+</html>
