@@ -1,6 +1,7 @@
 :root {
-    --bitcoin-orange: #f7931a;
-    --soft-orange: #ffe9d5;
+    --delicia-orange: #f5af30;
+    --dark-orange: #DC5F01;
+    --off-orange: #f5e6cb;
     --secondary-blue: #1a9af7;
     --soft-blue: #e7f5ff;
     --warm-black: #201E1C;
@@ -8,7 +9,6 @@
     --warm-grey: #bababa;
     --grey: #757575;
     --dark-grey: #808080;
-    --off-white: #faf8f7;
     --just-white: #fff;
 } 
 * {
@@ -30,13 +30,14 @@ header {
     min-width: 320px;
     height: 320px;
     text-align: center;
-    background: linear-gradient(207.8deg, #201E1C 16.69%, #F7931A 100%);
+    background: url(assets/img/choco-cake__0.5x.webp) no-repeat center;
+    background-size: cover;
 }
 .logo {
     margin: 40px 0 0;
     width: 130px;
 }
-.header--title-container {
+.hero--title-container {
     display: flex;
     flex-direction: column;
     width: 90%;
@@ -46,7 +47,7 @@ header {
     text-align: center;
     align-self: center;
 }
-.header--title-container h1 {
+.hero--title-container h1 {
     width: 288px;
     margin: 38px auto 0;
     font-size: 2.4rem;
@@ -54,14 +55,14 @@ header {
     line-height: 2.6rem;
     color: var(--just-white);
 }
-.header--title-container p {
+.hero--title-container p {
     width: 288px;
     margin: 38px auto 0;
     font-size: 1.4rem;
     font-weight: 500;
-    color: var(--soft-orange);
+    color: var(--just-white);
 }
-.header--title-container .header--button {
+.hero--title-container .hero--button {
     position: absolute;
     top: calc(100% - 24px);
 	left: calc(50% - 114px);
@@ -74,292 +75,64 @@ header {
     font-size: 1.4rem;
     font-weight: bold;
     border-radius: 6px;
-    color: var(--black);
-    background-color: var(--off-white);
+    color: var(--off-orange);
+    background-color: var(--dark-orange);
     /* Sombra */
     box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16);
     cursor: pointer;
 }
-.header--button span {
+.hero--button span {
     display: inline-block;
     width: 13px;
     height: 8px;
     background-image: url(assets/icons/down-arrow.svg);
 }
+/* Hero section end */
 
-/* First section - Tables */
+/* First section - Top Products */
 main {
     width: 100%;
     min-width: 320px;
     height: auto;
-    background-color: var(--off-white);
+    background-color: var(--off-orange);
 }
-.main-exchange-container {
+.top-product-container {
     width: 100%;
     height: auto;
     padding: 80px 0 0;
     text-align: center;
 }
-.main-exchange-container .backgroundImg {
+.top-product-container .backgroundImg {
     width: 200px;
     height: 200px;
     margin: 0 auto 50px;
     background: url(assets/img/Bitcoin.svg) center/cover no-repeat;
 }
-.main-exchange-container--title {
+.top-product-container--title {
     width: 90%;
     min-width: 288px;
     max-width: 900px;
     margin: 0 auto;
 }
-.main-exchange-container h2 {
+.top-product-container h2 {
     margin-bottom: 30px;
     font-size: 2.4rem;
     font-weight: bold;
     line-height: 2.6rem;
     color: var(--black);
 }
-.main-exchange-container p {
-    margin-bottom: 30px;
+.top-product-container p {
+    margin-bottom: 10px;
     font-size: 1.4rem;
     font-weight: 500;
     line-height: 1.6rem;
     color: var(--grey);
 }
-.main-currency-table,
-.main-broker-table {
-    width: 70%;
-    min-width: 235px;
-    max-width: 500px;
-    height: 360px;
-    margin: 0 auto;
-    font-family: "Inter", sans-serif;
-}
-.main-currency-table .currency-table--title,
-.main-broker-table .broker-table--title {
-    margin-bottom: 15px;
-    font-size: 1.8rem;
-    font-weight: bold;
-    line-height: 2.3rem;
-    font-family: "Dm Sans", sans-serif;
-    color: var(--bitcoin-orange);
-}
-.currency-table-container,
-.broker-table-container {
-    width: 90%;
-    min-width: 230px;
-    max-width: 300px;
-    height: 250px;
-    margin: 0 auto;
-}
-.currency-table-container table,
-.broker-table-container table {
-    width: 100%;
-    height: 100%;
-}
-.currency-table-container td,
-.broker-table-container td {
-    width: 50%;
-    font-size: 1.6rem;
-    font-weight: 500;
-    line-height: 1.9rem;
-    color: var(--warm-grey);
-    background-color: var(--just-white);
-}
-.currency-table-container .table__top-left,
-.broker-table-container .table__top-left {
-    border-radius: 15px 0 0 0;
-}
-.currency-table-container .table__top-right,
-.broker-table-container .table__top-right {
-    border-radius: 0 15px 0 0;
-}
-.currency-table-container .table__bottom-left,
-.broker-table-container .table__bottom-left {
-    border-radius: 0 0 0 15px;
-}
-.currency-table-container .table__bottom-right,
-.broker-table-container .table__bottom-right {
-    border-radius: 0 0 15px 0;
-}
-.currency-table-container .table__right,
-.broker-table-container .table__right {
-    font-size: 1.4rem;
-    font-weight: 400;
-    line-height: 1.7rem;
-    color: var(--grey);
-}
-.currency-table-container .down, .up {
-    display: inline-block;
-    width: 15px;
-    height: 15px;
-    margin-left: 10px;
-    background-image: url(assets/icons/trending-down.svg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-.currency-table-container .up {
-    background-image: url(assets/icons/trending-up.svg);
-}
-.currency-table--date {
-    width: 190px;
-    height: 30px;
-    margin: 0 auto;
-    margin-top: 15px;
-    background-color: var(--soft-orange);
-    border-radius: 8px;
-}
-.currency-table--date p {
-    font-size: 1.2rem;
-    line-height: 1.5rem;
-    color: var(--warm-black);
-    padding: 7px;
-    font-family: "Dm Sans", sans-serif;
-}
 
-/* Product detail section */
-.product-detail {
-    position: relative;
-    width: 100%;
-    min-width: 320px;
-    height: auto;
-    padding: 20px 10px;
-    background-color: var(--warm-black);
-}
-.product-detail--logo {
-    position: absolute;
-    top: -10px;
-	left: calc(50% - 20px);
-    background-image: url(assets/icons/batata.svg);
-    background-repeat: no-repeat;
-    background-size: contain;
-    width: 40px;
-    height: 30px;
-}
-.product-detail--title-container {
-    width: 90%;
-    min-width: 288px;
-    margin: 0 auto;
-    padding-top: 20px;
-}
-.product-detail--title {
-    width: 100%;
-    min-width: 288px;
-    font-size: 2.4rem;
-    font-weight: 700;
-    line-height: 2.6rem;
-    text-align: center;
-    color: var(--just-white);
-}
-.product-detail--subtitle {
-    width: 100%;
-    min-width: 288px;
-    font-size: 1.4rem;
-    font-weight: 500;
-    line-height: 1.8rem;
-    text-align: center;
-    color: var(--dark-grey);
-    padding-top: 25px;
-}
-.product-card--container {
-    width: 100%;
-    min-width: 288px;
-    height: auto;
-}
-/* Cards style */
-.product--card {
-    width: 90%;
-    min-width: 288px;
-    max-width: 400px;
-    margin: 30px auto 0;
-    background-color: #282623;
-    border-radius: 5px;
-    padding: 15px;
-    box-shadow: 0px 4px 8px 0px #00000029;
-}
-.product--card-icon {
-    display: inline-block;
-    width: 20px;
-    height: 20px;
-    background-size: contain;
-    background-repeat: no-repeat;
-}
-.product-card--title {
-    font-size: 1.8rem;
-    line-height: 1.8rem;
-    font-weight: 700;
-    color: var(--just-white);
-    margin: 10px 0;
-}
-.product-card--body {
-    width: 100%;
-    min-width: 250px;
-    font-size: 1.4rem;
-    line-height: 1.8rem;
-    font-weight: 500;
-    color: var(--dark-grey);
-}
-/* Cards Icons */
-.clock {
-    background-image: url(assets/icons/clock.svg);
-}
-.eye {
-    background-image: url(assets/icons/eye.svg);
-}
-.dollar {
-    background-image: url(assets/icons/dollar-sign.svg);
-}
-.check {
-    background-image: url(assets/icons/check-circle.svg);
-}
-
-/* Section Bitcoin baby */
-.bitcoin-img-container {
-    width: 100%;
-    min-width: 320px;
-    height: 60vh;
-    background-image: url(assets/img/bitcoinbaby.webp);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    text-align: center;
-}
-.bitcoin-img-container h2 {
-    padding-top: 60px;
-    font-size: 2.4rem;
-    font-weight: bold;
-    line-height: 2.6rem;
-    color: var(--just-white);  
-}
-
-/* Plans Section */
-.plans {
-    width: 100%;
-    min-width: 320px;
-    text-align: center;
-}
-.plans h2 {
-    width: 90%;
-    min-width: 288px;
-    margin: 60px auto 0;
-    font-size: 2.4rem;
-    font-weight: 700;
-    line-height: 2.6rem;
-    color: var(--black);
-}
-.plans--description {
-    width: 90%;
-    min-width: 288px;
-    margin: 20px auto 40px;
-    font-size: 1.4rem;
-    font-weight: 500;
-    line-height: 1.8rem;
-    color: var(--grey);
-}
+    /* Top product cards style */
 .plans__card-container {
     display: flex;
-    height: 316px;
+    height: 416px;
     margin: 0 auto;
     overflow-x: scroll;
     overscroll-behavior-x: contain;
@@ -370,55 +143,69 @@ main {
     position: relative;
     scroll-snap-align: center;
     width: 70%;
-    min-width: 190px;
+    min-width: 280px;
     max-width: 300px;
-    height: 250px;
+    height: 375px;
     margin: 20px auto;
+    padding: 10px;
     font-family: "Inter", sans-serif;
     border-radius: 8px;
-    background-color: var(--just-white);
+    background-color: #f7cb7b;
     box-shadow: 0px 4px 8px 0px #59491E29;
 }
-.plans-cards--card-top {
+.plans__card .plans-cards--card-top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: absolute;
     top: -16px;
     left: calc(50% - 50px);
     width: 100px;
     height: 30px;
     margin: 0 auto;
-    font-size: 1.2rem;
-    font-weight: bold;
+    font-size: 1.4rem;
     line-height: 3.2rem;
-    background-color: var(--bitcoin-orange);
+    background-color: var(--delicia-orange);
     color: var(--just-white);
     border-radius: 5px;
 }
+
+    /* Top products image container */
+
+.plans__card-container .fresa {
+    width: 250px;
+    height: 160px;
+    margin: 15px auto;
+    border-radius: 5px;
+    border: 1px solid var(--delicia-orange);
+    background: #ee5858 url(assets/img/fresa__0.25x.webp) no-repeat center;
+    background-size: cover;    
+}
+.plans__card-container .chocolate {
+    width: 250px;
+    height: 160px;
+    margin: 15px auto;
+    border-radius: 5px;
+    border: 1px solid var(--delicia-orange);
+    background: #ee5858 url(assets/img/choco-cake__0.25x.webp) no-repeat center;
+    background-size: cover;    
+}
+.plans__card-container .cerezas {
+    width: 250px;
+    height: 160px;
+    margin: 15px auto;
+    border-radius: 5px;
+    border: 1px solid var(--delicia-orange);
+    background: #ee5858 url(assets/img/cerezas_.webp) no-repeat center;
+    background-size: cover;    
+}
 .plans__card h3 {
     position: relative;
-    margin: 32px auto 10px;
+    margin: 32px auto 15px;
     font-family: "Dm Sans", sans-serif;
-    font-size: 1.4rem;
-    font-weight: 500;
+    font-size: 1.8rem;
+    font-weight: 700;
     line-height: 1.8rem;
-}
-.plans-cards--card-price {
-    position: relative;
-    font-size: 5.2rem;
-    font-weight: bold;
-    line-height: 6.3rem;
-    letter-spacing: -0.08em;
-    color: var(--black);
-}
-.plans-cards--card-price sup {
-    position: absolute;
-    left: calc(50% - 40px);
-    top: calc(50% - 20px);
-    width: 10px;
-    height: 15px;
-    margin-bottom: 5px;
-    font-size: 1.2rem;
-    font-weight: 500;
-    line-height: 1.5rem;
 }
 .plans__card p~p {
     width: 155px;
@@ -431,7 +218,7 @@ main {
 .plans__card button {
     display: flex;
     justify-content: space-between;
-    margin: 0 auto;
+    margin: 20px auto;
     width: 150px;
     height: 50px;
     padding: 12px 16px;
@@ -440,7 +227,7 @@ main {
     font-weight: 700;
     line-height: 1.9rem;
     color: var(--black);
-    border: solid 2px var(--bitcoin-orange);
+    border: solid 2px var(--delicia-orange);
     border-radius: 4px;
 }
 .plans__card .arrow-right {
@@ -451,6 +238,95 @@ main {
     background-size: cover;
     vertical-align: text-bottom;
 }
+/* First section End - Top Products */
+
+/* Second section - purchase form */
+.purchase-form-container {
+    width: 100%;
+    padding: 20px;
+    background-color: #13BCC2;
+}
+.purchase-form-container h2 {
+    font-size: 2.4rem;
+    color: var(--just-white);
+}
+.purchase-form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    min-width: 300px;
+    max-width: 1300px;
+    width: 95%;
+    margin: 0 auto;
+}
+.purchase-form div {
+    width: 100%;
+    max-width: 330px;
+    min-width: 250px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+.purchase-form label {
+    display: inline-block;
+    width: 300px;
+    margin: 10px 5px 5px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: var(--just-white);
+}
+.purchase-form input {
+    width: 100%;
+    height: 35px;
+    padding: 5px;
+    border: 1px solid var(--delicia-orange);
+    border-radius: 5px;
+}
+
+.purchase-form-container .buttton-container {
+    margin: 25px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    min-width: 300px;
+    max-width: 600px;
+    width: 95%;
+}
+.buttton-container .form-button {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 20px;
+    width: 200px;
+    height: 50px;
+    padding: 12px 16px;
+    font-family: "Dm Sans", sans-serif;
+    font-size: 1.4rem;
+    font-weight: 700;
+    line-height: 1.9rem;
+    color: var(--black);
+    border: solid 2px var(--delicia-orange);
+    border-radius: 4px;
+}
+.buttton-container .paypal-button {
+    background-color: #ffc439;
+    border: none;
+}
+.form-button .form-button-icon {
+    width: 30px;
+    height: 30px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    vertical-align: text-bottom;
+}
+.form-button .credit-icon {
+    background-image: url(assets/icons/tarjeta-de-credito.png);
+}
+.form-button .paypal-icon {
+    background-image: url(assets/icons/paypal.png);
+}
+
+
+
 
 /* Footer */
 footer {
