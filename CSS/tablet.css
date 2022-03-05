@@ -1,17 +1,23 @@
-.main-tables-container {
+header {
+    height: 420px;
+    background: url(../assets/img/choco-cake.webp) no-repeat center;
+    background-size: cover;
+}
+
+.footer__right {
+    width: 50%;
+    padding-right: 20px;
     display: flex;
-    margin: 0 auto;
-    width: 930px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: right;
 }
-.bitcoin-img-container {
-    background-image: url(/assets/img/bitcoinbaby2x.webp);
-}
-.product-card--container {
-    display: flex;
-    flex-wrap: wrap;
-    width: 930px;
-    margin: 0 auto;
-}
-.plans__card-container {
-    overflow-x: hidden;
+
+.footer__copyright {
+    margin: 4px 10px;
+    margin-right: 20px;
+    font-size: 1.2rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    text-align: center;
 }
