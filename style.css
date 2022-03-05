@@ -30,7 +30,7 @@ header {
     min-width: 320px;
     height: 320px;
     text-align: center;
-    background: url(assets/img/choco-cake__0.5x.webp) no-repeat center;
+    background: url(assets/img/choco-cake.webp) no-repeat center;
     background-size: cover;
 }
 .logo {
@@ -178,7 +178,7 @@ main {
     margin: 15px auto;
     border-radius: 5px;
     border: 1px solid var(--delicia-orange);
-    background: #ee5858 url(assets/img/fresa__0.25x.webp) no-repeat center;
+    background: #ee5858 url(assets/img/fresas_0.5x.webp) no-repeat center;
     background-size: cover;    
 }
 .plans__card-container .chocolate {
@@ -187,7 +187,7 @@ main {
     margin: 15px auto;
     border-radius: 5px;
     border: 1px solid var(--delicia-orange);
-    background: #ee5858 url(assets/img/choco-cake__0.25x.webp) no-repeat center;
+    background: #ee5858 url(assets/img/choco-cake_0.5x.webp) no-repeat center;
     background-size: cover;    
 }
 .plans__card-container .cerezas {
@@ -196,7 +196,7 @@ main {
     margin: 15px auto;
     border-radius: 5px;
     border: 1px solid var(--delicia-orange);
-    background: #ee5858 url(assets/img/cerezas_.webp) no-repeat center;
+    background: #ee5858 url(assets/img/cerezas_0.5x.webp) no-repeat center;
     background-size: cover;    
 }
 .plans__card h3 {
