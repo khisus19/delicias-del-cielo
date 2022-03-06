@@ -72,17 +72,17 @@
                 <!-- Nombre -->
                 <div>
                     <label for="name">Nombre y Apellido</label><br>
-                    <input type="text" class="input-box" placeholder="Pedro Perez" required><br>
+                    <input type="text" class="input-box" placeholder="Pedro Perez" autocomplete="name" required><br>
                 </div>
                 <!-- Teléfono -->
                 <div>
                     <label for="phone">Número de teléfono</label><br>
-                    <input type="tel" name="phone" placeholder="123-45-678" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required><br>
+                    <input type="tel" name="phone" placeholder="123-45-678" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" autocomplete="tel" required><br>
                 </div>
                 <!-- Mail -->
                 <div>
                     <label for="mail">Correo electrónico</label><br>
-                    <input type="email" id="email" name="email" placeholder="pedro@mail.com"><br>
+                    <input type="email" id="email" name="email" placeholder="pedro@mail.com" autocomplete="email"><br>
                 </div>
 
                 <!-- Sabor de bizcocho 1 -->
@@ -164,10 +164,10 @@
                     <input type="datetime-local" name="delivery-time" required>
                 </div>
 
-                <!-- Comentario -->
+                <!-- Mensaje -->
                 <div>
-                    <label for="comentario" >¿Deseas agregar una dedicatoria?</label><br>
-                    <input type="text" id="comentario" name="comentario" placeholder="Feliz Cumpleaños">
+                    <label for="mensaje" >¿Deseas agregar una dedicatoria?</label><br>
+                    <input type="text" id="mensaje" name="mensaje" placeholder="Feliz Cumpleaños">
                 </div>
 
             </form>
