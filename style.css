@@ -1,6 +1,7 @@
 :root {
     --delicia-orange: #f5af30;
     --dark-orange: #DC5F01;
+    --light-orange: #f7cb7b;
     --off-orange: #f5e6cb;
     --celeste: #13BCC2;
     --blue: #3187f5;
@@ -155,7 +156,7 @@ main {
     padding: 10px;
     font-family: "Inter", sans-serif;
     border-radius: 8px;
-    background-color: #f7cb7b;
+    background-color: var(--light-orange);
     box-shadow: 0px 4px 8px 0px #59491E29;
 }
 .plans__card .plans-cards--card-top {
@@ -313,12 +314,19 @@ main {
     font-weight: 700;
     line-height: 1.9rem;
     color: var(--black);
+    background-color: var(--just-white);
     border: solid 2px var(--delicia-orange);
     border-radius: 4px;
+}
+.buttton-container .credit-button:hover {
+    background-color: var(--light-grey);
 }
 .buttton-container .paypal-button {
     background-color: #ffc439;
     border: none;
+}
+.buttton-container .paypal-button:hover {
+    background-color: #f0b731;
 }
 .form-button .form-button-icon {
     width: 30px;
@@ -333,7 +341,7 @@ main {
 .form-button .paypal-icon {
     background-image: url(assets/icons/paypal.png);
 }
-
+/* Second section End - Purchase form */
 
 
 
@@ -382,8 +390,7 @@ footer section {
     justify-content: center;
 }
 .footer__right img {
-    width: 40px;
-    height: 40px;
+    width: 60px;
 }
 .footer__copyright {
     margin: 4px auto;
