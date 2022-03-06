@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Inter:wght@300;400&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../CSS/credit-form-page.css">
+    <link rel="stylesheet" href="../CSS/paypal-form-page.css">
 </head>
 <body>
     <article class="container">
@@ -30,25 +30,19 @@
                 </ul>
             </div>
         </div>
-        <h2>Pagar</h2>
+        <h2>Pagar con PayPal</h2>
         <div class="purchase-form-container">
             <form action="" class="purchase-form">
-                <label for="name">Nombre y Apellido</label>
-                <input type="text" class="input-box" placeholder="Pedro Perez" required>
+                <label for="email">Correo electrónico de PayPal</label>
+                <input type="email" id="email" name="email" placeholder="pedro@mail.com">
     
-                <label for="credit-card-number">Número de Tarjeta de Crédito</label>
-                <input type="number" name="credit-card-number">
-    
-                <label for="cvc">CVC</label>
-                <input type="number" name="cvc">
-    
-                <label for="expiration-date">Fecha de vencimiento</label>
-                <input type="number" name="expiration-date" placeholder="mm/AA">
+                <label for="password">Contraseña</label>
+                <input type="password" id="password" name="password" placeholder="********">
             </form>
         </div>
         <div class="button-container">
-            <button href="#" class="form-button credit-button">Pagar<span class="form-button-icon credit-icon"></span></button>
-            <a href="../html/paypal-form-page.html" class="paypal-link">¿Desea pagar con PayPal?</a>
+            <button href="#" class="paypal-button form-button">Pagar con PayPal<span class="form-button-icon paypal-icon"></span></button>
+            <a href="../html/credit-form-page.html" class="credit-link">¿Desea pagar con tarjeta?</a>
         </div>
     </article>
 </body>

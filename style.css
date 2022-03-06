@@ -236,6 +236,7 @@ main {
     background-color: var(--just-white);
     border: solid 2px var(--delicia-orange);
     border-radius: 4px;
+    cursor: pointer;
 }
 .plans__card button:hover {
     background-color: var(--light-grey);
@@ -317,6 +318,7 @@ main {
     background-color: var(--just-white);
     border: solid 2px var(--delicia-orange);
     border-radius: 4px;
+    cursor: pointer;
 }
 .buttton-container .credit-button:hover {
     background-color: var(--light-grey);
